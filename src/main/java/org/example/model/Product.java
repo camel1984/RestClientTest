@@ -1,0 +1,32 @@
+package org.example.model;
+
+public class Product {
+    private String name;
+    private double price;
+
+    // Default constructor is necessary for Jackson to work
+    public Product() {
+    }
+
+    public Product(String name, double price) {
+        this.name = name;
+        this.price = price;
+    }
+
+    // Getters and setters
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+}
